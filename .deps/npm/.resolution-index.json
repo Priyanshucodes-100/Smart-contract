@@ -62,5 +62,13 @@
         "file": "localvariable.sol"
       }
     }
+  },
+  "Globalvariable.sol": {
+    "__sources__": {
+      "Globalvariable.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract GlobalVariableExample {\r\n    // State variables (can be considered as global variables)\r\n    uint256 public globalNumber = 42;\r\n    address public owner = msg.sender;\r\n\r\n    // Function to update the state variable\r\n    function updateGlobalNumber(uint256 newValue) public {\r\n        // Only the owner can update the globalNumber\r\n        require(msg.sender == owner, \"Only the owner can update globalNumber\");\r\n        \r\n        // Updating the globalNumber\r\n        globalNumber = newValue;\r\n    }\r\n}\r\n",
+        "file": "Globalvariable.sol"
+      }
+    }
   }
 }
