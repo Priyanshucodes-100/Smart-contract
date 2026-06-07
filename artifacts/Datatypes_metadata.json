@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "hii",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"datatypes.sol": "Datatypes"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"datatypes.sol": {
+			"keccak256": "0x4f88ae1da41480a57eda674a90c7b24e6e47697bb1be21fa56f00d3c49bebd76",
+			"urls": [
+				"bzz-raw://6c5df4ffb13fcb4789e05e14546b54bc97a4feb0453a4e8ceeb9c7f2fc59f8e4",
+				"dweb:/ipfs/QmbK6sHmLNpBh7Z3Whd7QKzYZFvfZEiE2kMrqQQyHfCLMd"
+			]
+		}
+	},
+	"version": 1
+}

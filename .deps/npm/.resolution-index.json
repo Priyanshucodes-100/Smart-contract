@@ -1,0 +1,58 @@
+{
+  "hello1.sol": {
+    "__sources__": {
+      "hello1.sol": {
+        "content": "//SPDX-License-identifier : MIT;\r\npragma solidity ^0.8.0;\r\n\r\ncontract NFTcount{\r\n     uint256 public numberofNFT;\r\n\r\n     function checktotalNFT()public view returns(uint256){\r\n        return numberofNFT;\r\n     }\r\n\r\n     function addNFT()public {\r\n\r\n        numberofNFT += 1;\r\n     }\r\n\r\n    function deleteNFT()public{\r\n\r\n        numberofNFT -= 1;\r\n    }\r\n     }\r\n\r\n",
+        "file": "hello1.sol"
+      }
+    }
+  },
+  "hello2.sol": {
+    "__sources__": {
+      "hello2.sol": {
+        "content": "//SPDX-License-identifier : MIT;\r\npragma solidity ^0.8.0;\r\n\r\ncontract Myfirstcontract{\r\n\r\n    string public name; \r\n    uint256 public age;\r\n\r\n    // constructor(string memory _name, uint256 _age){\r\n    //     name = _name;\r\n    //     age = _age; \r\n    // } \r\n    \r\n\r\n    function addInfo(string memory _name, uint256 _age)public{\r\n        name = _name;   \r\n        age = _age;\r\n    }\r\n}",
+        "file": "hello2.sol"
+      }
+    }
+  },
+  "hello.sol": {
+    "__sources__": {
+      "hello.sol": {
+        "content": "//SPDX-License-identifier : MIT;\r\n\r\npragma solidity ^0.8.0;\r\ncontract Myfirstcontract{\r\n\r\n    string public hey = \"narendra modi\";\r\n}\r\n",
+        "file": "hello.sol"
+      }
+    }
+  },
+  "nftcount.sol": {
+    "__sources__": {
+      "nftcount.sol": {
+        "content": "//SPDX-License-identifier : MIT;\\\r\npragma solidity ^0.8.9;\r\n\r\ncontract Nftcount{\r\n\r\n    uint256 public numberofNFT;\r\n\r\n    function checktotalNFT()public view returns (uint256){\r\n        return numberofNFT;\r\n    }\r\n//  returns\r\n// In the function header (declaration)\r\n// Tells the compiler what type the function will give back\r\n// //return\r\n// Inside the function body\r\n// Actually sends back the value when the function runs\r\n\r\n\r\n    function addNFT() public{\r\n        numberofNFT += 1;\r\n    }\r\n\r\n    function deleteNFT() public{\r\n        numberofNFT -= 1;\r\n    }\r\n    }\r\n\r\n",
+        "file": "nftcount.sol"
+      }
+    }
+  },
+  "funtions.sol": {
+    "__sources__": {
+      "funtions.sol": {
+        "content": "//SPDX-License-identifier : MIT;\r\npragma solidity ^0.8.0;\r\n\r\ncontract Function{\r\n\r\n    uint256  hey;\r\n\r\n    function getdata()public view returns(uint256){\r\n        \r\n        return hey;\r\n    }\r\n    \r\n    function updatedata(uint256 _hey)public {\r\n        hey = _hey;\r\n    }\r\n\r\n    function adddata( uint256 _a ,uint256 _b) public returns(uint256){\r\n\r\n        uint256 newnumber = _a + _b;\r\n        hey = newnumber;\r\n        return hey;\r\n\r\n    }\r\n}",
+        "file": "funtions.sol"
+      }
+    }
+  },
+  "datatypes.sol": {
+    "__sources__": {
+      "datatypes.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.20;\r\n\r\ncontract Primitives {\r\n   \r\n   //default value of bool is false.\r\n\r\n    bool public hey;\r\n    bool public boo = true;\r\n\r\n    /*\r\n    uint stands for unsigned integer, meaning non negative integers\r\n    different sizes are available\r\n        uint8   ranges from 0 to 2 ** 8 - 1\r\n        uint16  ranges from 0 to 2 ** 16 - 1\r\n        ...\r\n        uint256 ranges from 0 to 2 ** 256 - 1\r\n    */\r\n    uint8 public u8 = 1;\r\n    uint public u256 = 456;\r\n    uint public u = 123; // uint is an alias for uint256\r\n\r\n    /*\r\n    Negative numbers are allowed for int types.\r\n    Like uint, different ranges are available from int8 to int256\r\n    \r\n    int256 ranges from -2 ** 255 to 2 ** 255 - 1\r\n    int128 ranges from -2 ** 127 to 2 ** 127 - 1\r\n    */\r\n    int8 public i8 = -1;\r\n    int public i256 = 456;\r\n    int public i = -123; // int is same as int256\r\n\r\n    // minimum and maximum of int\r\n    int public minInt = type(int).min;\r\n    int public maxInt = type(int).max;\r\n\r\n    address public hi;\r\n    address public addr = 0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c;\r\n\r\n    /*\r\n    In Solidity, the data type byte represent a sequence of bytes. \r\n    Solidity presents two type of bytes types :\r\n\r\n     - fixed-sized byte arrays\r\n     - dynamically-sized byte arrays.\r\n     \r\n     The term bytes in Solidity represents a dynamic array of bytes. \r\n     It’s a shorthand for byte[] .\r\n     \r\n     bytes are more memory efficient.\r\n\r\n     Bytes allow us to safe gas fee. \r\n     \r\n    */\r\n    bytes1 a = 0xb5; //  [10110101]\r\n    bytes1 b = 0x56; //  [01010110]\r\n\r\n    // Default values\r\n    // Unassigned variables have a default value\r\n    bool public defaultBoo; // false\r\n    uint public defaultUint; // 0\r\n    int public defaultInt; // 0\r\n    address public defaultAddr; // 0x0000000000000000000000000000000000000000\r\n}\r\n\r\n//in solidity there is nothing like NULL or UNDEFINED.",
+        "file": "datatypes.sol"
+      }
+    }
+  },
+  "Statevariable.sol": {
+    "__sources__": {
+      "Statevariable.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.29;\r\n\r\ncontract MyContract {\r\n    // State variables\r\n    uint256 public myNumber; // Public state variable\r\n    address private owner;    // Private state variable\r\n\r\n    // Constructor function\r\n    constructor() {\r\n        myNumber = 42;\r\n        owner = msg.sender;\r\n    }\r\n\r\n    // Function to update the state variable\r\n    function setMyNumber(uint256 newValue) public {\r\n        require(msg.sender == owner, \"Only the owner can set the number\");\r\n        myNumber = newValue;\r\n    }\r\n\r\n    // Function to get the state variable\r\n    function getMyNumber() public view returns (uint256) {\r\n        return myNumber;\r\n    }\r\n}\r\n\r\n//1.when you define variable after contract they asre state variables.they actually get stored in the blockchain.\r\n//2.Variables defined inside a function are called local variables and can only execute when we call a function .it will act as memory and will not store on blockchain",
+        "file": "Statevariable.sol"
+      }
+    }
+  }
+}

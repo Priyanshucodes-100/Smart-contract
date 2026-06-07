@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getdata",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "hey",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"nftcount.sol": "Functions"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"nftcount.sol": {
+			"keccak256": "0xd8e16fe324aa8a5a50071333623654293345596d86dbc44e0cf195bb9a4e6344",
+			"urls": [
+				"bzz-raw://86f8771d3b2c2f0e77a0ee53d89dbcc896eaaa293e2e8f3b398104bae07fb9d4",
+				"dweb:/ipfs/QmVNpT5pQLQWAjk5hKP49XEUud1VwoVSMH637d5KfewrKb"
+			]
+		}
+	},
+	"version": 1
+}
