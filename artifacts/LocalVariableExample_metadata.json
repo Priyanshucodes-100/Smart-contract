@@ -6,35 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "addNFT",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "checktotalNFT",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "deleteNFT",
+				"name": "performCalculation",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "numberofNFT",
+				"name": "stateVariable",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -59,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"nftcount.sol": "Nftcount"
+			"localvariable.sol": "LocalVariableExample"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -73,11 +64,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"nftcount.sol": {
-			"keccak256": "0xabbb416d3ee7162f62522229dc88ffe0bafd463939727f4a5bedfd4ddc1e5a52",
+		"localvariable.sol": {
+			"keccak256": "0x06d4b92dab201b26196a23103883fa76a70368f9e67ff39a7c3ec396b773755a",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://985c3835747ea608ce16070cbd9c832772d3735425cd7fe5d6d5e93105a7437b",
-				"dweb:/ipfs/Qme4zqDbacvkgiGFPL82w6wtnYtJbh52Bhm9a1FF1nFHM8"
+				"bzz-raw://52b45b71bdec18fbb3fa91f6c98f0704ef2b533fb31fe9879d16c8da3ca91bad",
+				"dweb:/ipfs/QmSLnJNp3ruUwrw53jJCdSvoz8e2F5qq7iVcqjMjV5kQmL"
 			]
 		}
 	},

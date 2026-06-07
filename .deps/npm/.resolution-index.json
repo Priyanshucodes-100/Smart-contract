@@ -15,27 +15,27 @@
       }
     }
   },
-  "hello.sol": {
+  "funtions.sol": {
     "__sources__": {
-      "hello.sol": {
-        "content": "//SPDX-License-identifier : MIT;\r\n\r\npragma solidity ^0.8.0;\r\ncontract Myfirstcontract{\r\n\r\n    string public hey = \"narendra modi\";\r\n}\r\n",
-        "file": "hello.sol"
+      "funtions.sol": {
+        "content": "//SPDX-License-identifier : MIT;\r\npragma solidity ^0.8.0;\r\n\r\ncontract Function{\r\n\r\n    uint256  hey;\r\n\r\n    function getdata()public view returns(uint256){\r\n        \r\n        return hey;\r\n    }\r\n    \r\n    function updatedata(uint256 _hey)public {\r\n        hey = _hey;\r\n    }\r\n\r\n    function adddata( uint256 _a ,uint256 _b) public returns(uint256){\r\n\r\n        uint256 newnumber = _a + _b;\r\n        hey = newnumber;\r\n        return hey;\r\n\r\n    }\r\n}",
+        "file": "funtions.sol"
       }
     }
   },
   "nftcount.sol": {
     "__sources__": {
       "nftcount.sol": {
-        "content": "//SPDX-License-identifier : MIT;\\\r\npragma solidity ^0.8.9;\r\n\r\ncontract Nftcount{\r\n\r\n    uint256 public numberofNFT;\r\n\r\n    function checktotalNFT()public view returns (uint256){\r\n        return numberofNFT;\r\n    }\r\n//  returns\r\n// In the function header (declaration)\r\n// Tells the compiler what type the function will give back\r\n// //return\r\n// Inside the function body\r\n// Actually sends back the value when the function runs\r\n\r\n\r\n    function addNFT() public{\r\n        numberofNFT += 1;\r\n    }\r\n\r\n    function deleteNFT() public{\r\n        numberofNFT -= 1;\r\n    }\r\n    }\r\n\r\n",
+        "content": "//SPDX-License-identifier : MIT;\r\npragma solidity ^0.8.9;\r\n\r\ncontract Nftcount{\r\n\r\n    uint256 public numberofNFT;\r\n\r\n    function checktotalNFT()public view returns (uint256){\r\n        return numberofNFT;\r\n    }\r\n//  returns\r\n// In the function header (declaration)\r\n// Tells the compiler what type the function will give back\r\n// //return\r\n// Inside the function body\r\n// Actually sends back the value when the function runs\r\n\r\n\r\n    function addNFT() public{\r\n        numberofNFT += 1;\r\n    }\r\n\r\n    function deleteNFT() public{\r\n        numberofNFT -= 1;\r\n    }\r\n    }\r\n\r\n",
         "file": "nftcount.sol"
       }
     }
   },
-  "funtions.sol": {
+  "hello.sol": {
     "__sources__": {
-      "funtions.sol": {
-        "content": "//SPDX-License-identifier : MIT;\r\npragma solidity ^0.8.0;\r\n\r\ncontract Function{\r\n\r\n    uint256  hey;\r\n\r\n    function getdata()public view returns(uint256){\r\n        \r\n        return hey;\r\n    }\r\n    \r\n    function updatedata(uint256 _hey)public {\r\n        hey = _hey;\r\n    }\r\n\r\n    function adddata( uint256 _a ,uint256 _b) public returns(uint256){\r\n\r\n        uint256 newnumber = _a + _b;\r\n        hey = newnumber;\r\n        return hey;\r\n\r\n    }\r\n}",
-        "file": "funtions.sol"
+      "hello.sol": {
+        "content": "//SPDX-License-identifier : MIT;\r\n\r\npragma solidity ^0.8.0;\r\ncontract Myfirstcontract{\r\n\r\n    string public hey = \"narendra modi\";\r\n}\r\n",
+        "file": "hello.sol"
       }
     }
   },
@@ -52,6 +52,14 @@
       "Statevariable.sol": {
         "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.29;\r\n\r\ncontract MyContract {\r\n    // State variables\r\n    uint256 public myNumber; // Public state variable\r\n    address private owner;    // Private state variable\r\n\r\n    // Constructor function\r\n    constructor() {\r\n        myNumber = 42;\r\n        owner = msg.sender;\r\n    }\r\n\r\n    // Function to update the state variable\r\n    function setMyNumber(uint256 newValue) public {\r\n        require(msg.sender == owner, \"Only the owner can set the number\");\r\n        myNumber = newValue;\r\n    }\r\n\r\n    // Function to get the state variable\r\n    function getMyNumber() public view returns (uint256) {\r\n        return myNumber;\r\n    }\r\n}\r\n\r\n//1.when you define variable after contract they asre state variables.they actually get stored in the blockchain.\r\n//2.Variables defined inside a function are called local variables and can only execute when we call a function .it will act as memory and will not store on blockchain",
         "file": "Statevariable.sol"
+      }
+    }
+  },
+  "localvariable.sol": {
+    "__sources__": {
+      "localvariable.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract LocalVariableExample {\r\n    // State variable\r\n    uint256 public stateVariable;\r\n\r\n    // Function that uses local variables\r\n    function performCalculation(uint256 a, uint256 b) public {\r\n        // Local variables\r\n        uint256 result;\r\n        address sender = msg.sender;\r\n\r\n        // Performing a simple calculation\r\n        result = a + b;\r\n\r\n        // Updating state variable based on the calculation\r\n        stateVariable = result;\r\n\r\n        // You can use local variables for other operations within the function...\r\n    }\r\n}",
+        "file": "localvariable.sol"
       }
     }
   }

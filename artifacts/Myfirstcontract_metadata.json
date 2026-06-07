@@ -6,39 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_age",
-						"type": "uint256"
-					}
-				],
-				"name": "addInfo",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "age",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "name",
+				"name": "hey",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -63,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"funtions.sol": "Myfirstcontract"
+			"hello.sol": "Myfirstcontract"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -77,11 +46,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"funtions.sol": {
-			"keccak256": "0x4412be9c89ec9065b9008be55901d650ad90f4c3daf41ffe9900ed1cff25e02a",
+		"hello.sol": {
+			"keccak256": "0x5da6a9dc158e8952f58995ed88eec2023c2d6279f049e3d6f89a8fbb8f8ea0b9",
 			"urls": [
-				"bzz-raw://3c64383743102972021f6a13c58be927a36d99696caab2cc37692ef64ceccd6b",
-				"dweb:/ipfs/QmbDgS5omXQpQgKRsuYWiy65R9NT8M5AbFB4jpTGfVkvXg"
+				"bzz-raw://ac7e5d52111428ebce8adf578b223dc4e5800169a9f8c7451c6936daa8deebc2",
+				"dweb:/ipfs/QmNcvubrfkfqi642PqQfANZLXyX9xk52Ap4jxRFjmmCrsj"
 			]
 		}
 	},

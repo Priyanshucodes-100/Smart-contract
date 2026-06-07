@@ -1,4 +1,4 @@
-//SPDX-License-identifier : MIT;\
+//SPDX-License-identifier : MIT;
 pragma solidity ^0.8.9;
 
 contract Nftcount{
