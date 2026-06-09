@@ -25,3 +25,14 @@ contract Pure{
 // | Modify state variable| ❌    | ❌    |
 // | Use local variables  | ✅    | ✅    |
 // | Return calculations  | ✅    | ✅    |
+
+
+// Here are some key points about pure functions:
+
+// Do Not Access State: Functions marked as pure should not read from or modify state variables.
+
+// Zero Gas Cost for External Calls: When called externally (outside the contract), pure functions have zero gas cost.
+
+// Compile-Time Check: The pure modifier provides a compile-time check to ensure that the function adheres to its declaration.
+
+// Intention Clarity: Using pure makes your code more readable and indicates your intention to have a state-independent function.

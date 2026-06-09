@@ -52,11 +52,11 @@
 	},
 	"sources": {
 		"pure.sol": {
-			"keccak256": "0x38941d0438bc8c6c82ccbe5119455f968fc253ae5393c0be6720f5eb0ed461e9",
+			"keccak256": "0xb3f5143130406a017747a782bc0e83866bde75b1ed0307be579eb1ac728557df",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://39c0918cda554b0da382aafe6d093850c6440f39caeb2e6f6df9c55e01ada529",
-				"dweb:/ipfs/QmNsdSLsLJzniJwfQwH8QShn4J9hbb3kzpYTkW8V9mhhyL"
+				"bzz-raw://109d79d038e8ed51e99142c346b2b00d1b664c3021603629df38fe505010924e",
+				"dweb:/ipfs/QmRyzi3xbDmBShyqui9CuLBRabrN91JCbkr8Xguorabw73"
 			]
 		}
 	},
