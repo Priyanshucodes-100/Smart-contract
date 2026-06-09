@@ -31,14 +31,6 @@
       }
     }
   },
-  "hello.sol": {
-    "__sources__": {
-      "hello.sol": {
-        "content": "//SPDX-License-identifier : MIT;\r\n\r\npragma solidity ^0.8.0;\r\ncontract Myfirstcontract{\r\n\r\n    string public hey = \"narendra modi\";\r\n}\r\n",
-        "file": "hello.sol"
-      }
-    }
-  },
   "datatypes.sol": {
     "__sources__": {
       "datatypes.sol": {
@@ -71,11 +63,27 @@
       }
     }
   },
+  "hello.sol": {
+    "__sources__": {
+      "hello.sol": {
+        "content": "//SPDX-License-identifier : MIT;\r\n\r\npragma solidity ^0.8.0;\r\ncontract Myfirstcontract{\r\n\r\n    string public hey = \"narendra modi\";\r\n}\r\n",
+        "file": "hello.sol"
+      }
+    }
+  },
   "view.sol": {
     "__sources__": {
       "view.sol": {
         "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.29;\r\n\r\ncontract View{\r\n\r\n    uint256 public Num1 =5;\r\n    uint256 public Num2 =7;\r\n\r\n    function getdata()public returns (uint256 product, uint256 total, uint256 diff){\r\n\r\n        Num1 += 5;\r\n        \r\n        Num2 += 7;\r\n\r\n        product = Num1*Num2;\r\n        total = Num1+Num2;\r\n        diff = Num1-Num2;\r\n    }\r\n}\r\n\r\n//if we want to do any changes in state variable we cant use view\r\n//if we want to see the state variable we can use view .\r\n//view are free to be called without creating a transaction, and they do not consume gas when called from outside the contract.\r\n",
         "file": "view.sol"
+      }
+    }
+  },
+  "pure.sol": {
+    "__sources__": {
+      "pure.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.29;\r\n\r\ncontract Pure{\r\n\r\n    uint256 num1 =45;\r\n    uint256 num2 =18;\r\n\r\n    function getdata() public view returns(uint256, uint256){\r\n         uint256 num3 = 12;\r\n         uint256 num4 = 90;\r\n\r\n         uint256 product = num4*num1;\r\n         uint256 total = num2 + num3;\r\n         return(product, total);\r\n    }\r\n    \r\n    \r\n}\r\n\r\n//PURE is limited to local variable and cannot access the state variable\r\n//| Feature               | pure | view |\r\n// | -------------------- | ---- | ---- |\r\n// | Read state variable  | ❌    | ✅    |\r\n// | Modify state variable| ❌    | ❌    |\r\n// | Use local variables  | ✅    | ✅    |\r\n// | Return calculations  | ✅    | ✅    |\r\n",
+        "file": "pure.sol"
       }
     }
   }
