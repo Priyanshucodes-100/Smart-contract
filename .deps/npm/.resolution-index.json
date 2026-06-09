@@ -70,5 +70,13 @@
         "file": "Globalvariable.sol"
       }
     }
+  },
+  "view.sol": {
+    "__sources__": {
+      "view.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.29;\r\n\r\ncontract View{\r\n\r\n    uint256 public Num1 =5;\r\n    uint256 public Num2 =7;\r\n\r\n    function getdata()public returns (uint256 product, uint256 total, uint256 diff){\r\n\r\n        Num1 += 5;\r\n        \r\n        Num2 += 7;\r\n\r\n        product = Num1*Num2;\r\n        total = Num1+Num2;\r\n        diff = Num1-Num2;\r\n    }\r\n}\r\n\r\n//if we want to do any changes in state variable we cant use view\r\n//if we want to see the state variable we can use view .\r\n//view are free to be called without creating a transaction, and they do not consume gas when called from outside the contract.\r\n",
+        "file": "view.sol"
+      }
+    }
   }
 }
