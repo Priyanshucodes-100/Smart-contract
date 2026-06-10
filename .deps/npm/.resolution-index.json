@@ -94,5 +94,21 @@
         "file": "Eventcontract.sol"
       }
     }
+  },
+  "constant.sol": {
+    "__sources__": {
+      "constant.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.29;\r\n\r\ncontract Constants{\r\n    //\t71666\r\n    //address public myaddr = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;\r\n\r\n    //\t\t47099\r\n    address public constant MY_ADDR = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;\r\n}\r\n\r\n//while using constant keyword the execution cost gets reduced......i.e : lss gas fee\r\n",
+        "file": "constant.sol"
+      }
+    }
+  },
+  "Ifelse.sol": {
+    "__sources__": {
+      "Ifelse.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.29;\r\n\r\ncontract Ifelse{\r\n\r\n    uint256 public mynum = 5;\r\n    string public mystring;\r\n\r\n    function getdata(uint256 _num)public returns(string memory){\r\n\r\n        return _num == 5 ? mystring = \"hello\" : mystring = \"bolo\";\r\n    }\r\n\r\n    }",
+        "file": "Ifelse.sol"
+      }
+    }
   }
 }
