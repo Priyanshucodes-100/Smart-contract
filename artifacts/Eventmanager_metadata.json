@@ -6,52 +6,46 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "Num1",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "Num2",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getdata",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "product",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "total",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "diff",
+						"name": "_ticketprice",
 						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "buyticket",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "ticketId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getamount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -68,7 +62,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"view.sol": "View"
+			"Eventcontract.sol": "Eventmanager"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -82,12 +76,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"view.sol": {
-			"keccak256": "0x9e42f99ec629441689128ace543bf985721e8ae711882fb60fc9b3d186ac0c62",
+		"Eventcontract.sol": {
+			"keccak256": "0x6a7f8fbac2fff8d4af17c831e5625b1ed6358738b1c009644b834d31b6baa56e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://50753fc842e153bbaabe882ffa962c7f5df09f739523bf3a084a565c49b4c58c",
-				"dweb:/ipfs/QmePyRkhNewKVrREXEdadraa39YuVGDHiiGKbUrrjNijuW"
+				"bzz-raw://fc7982109b4e873887d03488af9a5a950836eec5388887f2ddd6bc2f2d8e5b81",
+				"dweb:/ipfs/QmRjS2gp56LP6nuA7KWGnDvNCn6bbJifRTxsHScF4i81fu"
 			]
 		}
 	},

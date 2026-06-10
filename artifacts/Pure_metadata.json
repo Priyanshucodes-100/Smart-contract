@@ -39,7 +39,7 @@
 		"compilationTarget": {
 			"pure.sol": "Pure"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -52,11 +52,11 @@
 	},
 	"sources": {
 		"pure.sol": {
-			"keccak256": "0xb3f5143130406a017747a782bc0e83866bde75b1ed0307be579eb1ac728557df",
+			"keccak256": "0x4d2a381f56eeff7a0d7824d5b6a0021b00bc176a77d18957c7acffb396cc7f98",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://109d79d038e8ed51e99142c346b2b00d1b664c3021603629df38fe505010924e",
-				"dweb:/ipfs/QmRyzi3xbDmBShyqui9CuLBRabrN91JCbkr8Xguorabw73"
+				"bzz-raw://a282a3bfaf8294778f5b154a54eaa9b98293af7e8a147c5025db98c405942377",
+				"dweb:/ipfs/QmNeBxtHkHGhRQ6Fh8zYGQNhNCEq6SPQBjnNgnqMQrY4Tr"
 			]
 		}
 	},

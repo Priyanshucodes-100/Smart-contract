@@ -229,7 +229,7 @@
 		"compilationTarget": {
 			"datatypes.sol": "Primitives"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
