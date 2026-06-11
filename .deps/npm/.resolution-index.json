@@ -142,5 +142,13 @@
         "file": "For.sol"
       }
     }
+  },
+  "Assert.sol": {
+    "__sources__": {
+      "Assert.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.3;\r\ncontract Asserstatement{\r\n\r\n    bool public result;\r\n\r\n    function checkOverflow(uint256 _num1, uint256 _num2)public {\r\n        uint256 sum = _num1 + _num2;\r\n        assert(sum <= 300);\r\n        result = true;\r\n\r\n    }\r\n\r\n    function getresults()public view returns(string memory){\r\n        if (result == true) {\r\n            return \"no overflow\";\r\n        }else{\r\n            return \"overflow exist\";\r\n        }\r\n    }\r\n}",
+        "file": "Assert.sol"
+      }
+    }
   }
 }
