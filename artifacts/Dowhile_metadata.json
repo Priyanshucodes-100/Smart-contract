@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"While.sol": "While"
+			"Dowhile.sol": "Dowhile"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -46,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"While.sol": {
-			"keccak256": "0xfb9a29bd857000e33e28b70d35b499c7f21d6d50cae844aab0b931141b467bd1",
+		"Dowhile.sol": {
+			"keccak256": "0xe60b62cef31b233662a91c3f11760cacb3d021a26bd1fc1b432b5fb2d6788999",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0b3d5a10ad72a1536cc51b3af2b367b647d0f53e64edb44287afc8fc9c01629c",
-				"dweb:/ipfs/QmevADk9fPjo9e3PeUHUdcLDHnGUxmhf24kGMRCUobQZkm"
+				"bzz-raw://f991eea224503e97ac678b372e0dd84e9bbfcf88b876a992c3708e5d01030503",
+				"dweb:/ipfs/QmVLxEztGshU4KfVLiATRiGQak5QwJAVpg6pEqFFEisbAP"
 			]
 		}
 	},

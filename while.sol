@@ -15,3 +15,4 @@ contract While{
     return data;
 }
 }
+//Loop takes more gas fee . so we should avoid using loops in our smart contract

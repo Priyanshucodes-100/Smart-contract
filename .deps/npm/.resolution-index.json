@@ -111,6 +111,14 @@
       }
     }
   },
+  "while.sol": {
+    "__sources__": {
+      "while.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.30;\r\n\r\ncontract While{\r\n\r\n    uint256[] data;\r\n    uint8 k =0;\r\n\r\n    function loop()public returns (uint256 [] memory){\r\n        while (k<5) \r\n    {\r\n        k++;\r\n        data.push(k);\r\n    }\r\n    return data;\r\n}\r\n}\r\n//Loop takes more gas fee . so we should avoid using loops in our smart contract\r\n",
+        "file": "while.sol"
+      }
+    }
+  },
   "While.sol": {
     "__sources__": {
       "While.sol": {
@@ -119,11 +127,11 @@
       }
     }
   },
-  "while.sol": {
+  "Dowhile.sol": {
     "__sources__": {
-      "while.sol": {
-        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.30;\r\n\r\ncontract While{\r\n\r\n    uint256[] data;\r\n    uint8 k =0;\r\n\r\n    function loop()public returns (uint256 [] memory){\r\n        while (k<5) \r\n    {\r\n        k++;\r\n        data.push(k);\r\n    }\r\n    return data;\r\n}\r\n}",
-        "file": "while.sol"
+      "Dowhile.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.3;\r\n\r\ncontract Dowhile{\r\n    uint256 [] data;\r\n    uint256 j =0 ;\r\n\r\n    function loop()public returns(uint256[] memory){\r\n\r\n        do{\r\n            j++;\r\n            data.push(j);\r\n        }\r\n        while(j<89);\r\n        return data;\r\n        }\r\n    } \r\n",
+        "file": "Dowhile.sol"
       }
     }
   }
