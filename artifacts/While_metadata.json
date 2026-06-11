@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"While.sol": "While"
+			"while.sol": "While"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -46,7 +46,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"While.sol": {
+		"while.sol": {
 			"keccak256": "0xfb9a29bd857000e33e28b70d35b499c7f21d6d50cae844aab0b931141b467bd1",
 			"license": "MIT",
 			"urls": [
