@@ -174,5 +174,13 @@
         "file": "Modifier.sol"
       }
     }
+  },
+  "Mapping.sol": {
+    "__sources__": {
+      "Mapping.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.30;\r\n\r\ncontract Mapping{\r\n\r\n    mapping(address => uint)public myMap;\r\n\r\n    function get(address _addr)public view returns (uint){\r\n        return myMap[_addr];\r\n    }\r\n\r\n    function set(address _addr, uint _i)public {\r\n        myMap[_addr] = _i;\r\n    }\r\n\r\n    function remove(address _addr)public{\r\n        delete myMap[_addr];\r\n    }\r\n\r\n    }\r\n    contract NestedMapping{\r\n        mapping(address => mapping(uint => bool)) public nested;\r\n\r\n        function get(address _addr1, uint _i)public view returns(bool){\r\n            return nested[_addr1][_i];\r\n            \r\n        }\r\n\r\n        function set(\r\n            address _addr1,\r\n            uint _i,\r\n            bool _boo\r\n        )public {\r\n            nested[_addr1][_i] = _boo;\r\n        }\r\n    function remove(address _addr1, uint _i)public {\r\n        delete nested[_addr1][_i];\r\n    }\r\n}",
+        "file": "Mapping.sol"
+      }
+    }
   }
 }
