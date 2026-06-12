@@ -24,6 +24,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "decrement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "locked",
 				"outputs": [
@@ -91,11 +104,11 @@
 	},
 	"sources": {
 		"Modifier.sol": {
-			"keccak256": "0xa8d73f1fdaae0bff4f64ff4fe45813c32dace325cf4f801004d6285e43c3a786",
+			"keccak256": "0x52169fc51a96f5ec150cce30ebd180b3c652d26a755e1d07722d0b0da04c5880",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f5c35180eb7d22863f2f3c10164a4f756b2d12360d10d2451b5cba11d004bc82",
-				"dweb:/ipfs/QmZg1Sqamy5Tc5b8tBpye1sUT6KaKWRMaurCzDXiKUdAnp"
+				"bzz-raw://3dd30924c72cc511279ba4ed70c37ae3a04f2dc445e8c59ed0c024e5df62240a",
+				"dweb:/ipfs/QmQ2zg4GocmmVGkdTAYTHBz5CkPhkc9L4DPV1Bdh5qFkaG"
 			]
 		}
 	},
