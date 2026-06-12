@@ -158,5 +158,13 @@
         "file": "Revert.sol"
       }
     }
+  },
+  "Require.sol": {
+    "__sources__": {
+      "Require.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.30;\r\n\r\ncontract Require {\r\n\r\n    function checkInput(uint256 _input)\r\n        public\r\n        pure\r\n        returns (string memory)\r\n    {\r\n        require(_input <= 255, \"Input is greater than uint8 range\");\r\n\r\n        return \"Input fits in uint8\";\r\n    }\r\n\r\n    function odd(uint256 _input)\r\n        public\r\n        pure\r\n        returns (bool)\r\n    {\r\n        require(_input % 2 != 0, \"Input is not odd\");\r\n\r\n        return true;\r\n    }\r\n}",
+        "file": "Require.sol"
+      }
+    }
   }
 }
