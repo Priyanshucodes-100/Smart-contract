@@ -166,5 +166,13 @@
         "file": "Require.sol"
       }
     }
+  },
+  "Modifier.sol": {
+    "__sources__": {
+      "Modifier.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.30;\r\ncontract Modifier{\r\n\r\n    address public owner;\r\n    uint256 public x =10;\r\n    bool public locked;\r\n\r\n    constructor(){\r\n        owner = msg.sender;\r\n    }\r\n\r\n    modifier onlyowner(){\r\n        require(msg.sender == owner, \"Not owner\");\r\n        _;\r\n    }\r\n\r\n    modifier validatedata(address _addr){\r\n        require(_addr != address(0), \"Not valid address\");\r\n        _;\r\n    }\r\n\r\n    function changeowner(address _newowner)public onlyowner validatedata(_newowner){\r\n        owner = _newowner;\r\n    }\r\n}",
+        "file": "Modifier.sol"
+      }
+    }
   }
 }
