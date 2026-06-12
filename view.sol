@@ -21,3 +21,5 @@ contract View{
 //if we want to do any changes in state variable we cant use view
 //if we want to see the state variable we can use view .
 //view are free to be called without creating a transaction, and they do not consume gas when called from outside the contract.
+//view -> function can read blockchain state but cannot modify it.
+

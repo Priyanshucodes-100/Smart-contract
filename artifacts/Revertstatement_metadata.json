@@ -6,52 +6,32 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "Num1",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num2",
+						"type": "uint256"
+					}
+				],
+				"name": "checkOverflow",
 				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "Num2",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getdata",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "product",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "total",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "diff",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -68,7 +48,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"view.sol": "View"
+			"Revert.sol": "Revertstatement"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -82,12 +62,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"view.sol": {
-			"keccak256": "0x9428ab36e942440ef83161c6d16e315274251b8adc71603b0f591861765507ef",
+		"Revert.sol": {
+			"keccak256": "0xc786c6dd57ce99b89b2eed1615b5d58bf14d30704197c78a2aae1a613d184124",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2e23009a4d0c4af9ae3f4d96815dd38254e0669336734d932f6f023ebfd19343",
-				"dweb:/ipfs/QmYXM1gHqCNYW3mEdn2QmvFdP3Y2ZcpLGJn84FwWuiMX5B"
+				"bzz-raw://b599941ea05c115547fad0de1f65ac52e63f496bfd8a2285b15ecca31b67144c",
+				"dweb:/ipfs/QmXNnnfKEPPYFpHkUdStXSc36d3MVdncdqQqVKqXCjuz3e"
 			]
 		}
 	},
