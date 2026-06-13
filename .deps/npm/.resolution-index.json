@@ -206,5 +206,13 @@
         "file": "Replacearray.sol"
       }
     }
+  },
+  "Enum.sol": {
+    "__sources__": {
+      "Enum.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.30;\r\n\r\ncontract Enum{\r\n    enum Status{\r\n        pending,\r\n        shipped,\r\n        accept,\r\n        reject,\r\n        canceled\r\n    }\r\n    \r\n    //default value is the first element listed in\r\n    //definition of the type,in this case \"pending\"\r\n\r\n    Status public status;\r\n\r\n    //returns uint\r\n    //pending - 0\r\n    //shipped -1\r\n    //accepted -2\r\n    //reject -3\r\n    //canceled -4\r\n\r\n    function get()public view returns(Status){\r\n        return status;\r\n    }\r\n\r\n    //update status by passing uint into input\r\n    function set(Status _status) public {\r\n        status = _status;\r\n    }\r\n\r\n    //you can update to a specific enum like this\r\n    function cancel() public{\r\n        status = Status.canceled;\r\n    }\r\n\r\n    //delete resets the enum to its first value, 0\r\n    function reset() public {\r\n        delete status;\r\n    }\r\n\r\n\r\n}",
+        "file": "Enum.sol"
+      }
+    }
   }
 }
