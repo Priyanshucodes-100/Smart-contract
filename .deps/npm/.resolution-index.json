@@ -190,5 +190,13 @@
         "file": "array.sol"
       }
     }
+  },
+  "Arrayremoving.sol": {
+    "__sources__": {
+      "Arrayremoving.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.32;\r\n\r\ncontract arrayremovebyshifting{\r\n    uint256[]  arr;\r\n\r\n\r\nfunction remove(uint _index)public{\r\n    require(_index < arr.length, \"Index outof bound\");\r\n\r\n    for(uint i = _index; i < arr.length -1; i++){\r\n        arr[i] = arr[i+1];\r\n    }\r\n    arr.pop();\r\n}\r\n\r\nfunction test() external {\r\n    arr =[1,2,3,4,5];\r\n    remove(2);\r\n    assert(arr[0] == 1);\r\n    assert(arr[1] == 2);\r\n    assert(arr[2] == 4);\r\n    assert(arr[3] == 5);\r\n    assert(arr.length == 4);\r\n\r\n    \r\n}\r\n}",
+        "file": "Arrayremoving.sol"
+      }
+    }
   }
 }
