@@ -37,3 +37,5 @@ contract Mapping{
         delete nested[_addr1][_i];
     }
 }
+// We use mappings for fast storage and retrieval of data using a unique key such as an address, token ID, or user ID. 
+// They are gas-efficient and commonly used for balances, ownership records, permissions, and voting systems.
